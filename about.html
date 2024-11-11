@@ -15,6 +15,28 @@
 
 </head>
 <body>
+  <header>
+    <img src="images/Logo.png" alt="logo">
+    <nav>
+      <a class="toggle" onclick="showNav()"
+        ><i class="fa fa-bars" aria-hidden="true"></i
+      ></a>
+      <ul id="nav-items" >
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="visitUs.html">Visit Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
+  </header>
+  <script>
+    function showNav() {
+      var element = document.getElementById("nav-items");
+      element.classList.toggle("show-items");
+    }
+  </script>
     
 </body>
 </html>
