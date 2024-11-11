@@ -93,3 +93,16 @@ header nav ul{
     font-size: 30px;
     color:#2F4F2F;
   }
+/*---------------HERO---------------------*/
+.hero{
+    background-image: url("images/hero.png");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 10px;
+}
+.hero h1{
+    color: #F5F5DC;
+    margin-bottom: 20px;
+}
