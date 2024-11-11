@@ -1,5 +1,7 @@
 /*-------- GLOBAL STYLES ---------*/
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
   
@@ -65,8 +67,29 @@ h1 {
 /*-----------HEADER-----------------*/
 header{
     background-color: #F5F5DC;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 header img{
     width:80px;
     margin:8px;
 }
+nav {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+  }
+header nav ul{
+    display: none;
+}
+.show-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.toggle .fa-bars {
+    font-size: 30px;
+    color:#2F4F2F;
+  }
