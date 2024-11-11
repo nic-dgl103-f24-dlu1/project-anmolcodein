@@ -22,7 +22,7 @@
 h1 {
     font-size: 3.8rem;
     font-family: "Playfair Display", serif;
-    color: #2F4F2F;
+    color: #F5F5DC;
     line-height: 1.3;
     font-weight: 700;
     margin-top: 0;
@@ -32,7 +32,7 @@ h1 {
   
   h2,
   h3 {
-    color: #2F4F2F;
+    color: #F5F5DC;
     font-family: "Playfair Display", serif;
   }
   
@@ -105,4 +105,18 @@ header nav ul{
 .hero h1{
     color: #F5F5DC;
     margin-bottom: 20px;
+}
+/*-------------ABOUT--------------------*/
+.about{
+    background-color: #2F4F2F;
+    padding: 20% 10%;
+}
+.about p{
+    margin-top: 5%;
+}
+.about a{
+    color:#D99152;
+    text-decoration: underline;
+    margin-left: 0;
+    padding-left: 0;
 }
