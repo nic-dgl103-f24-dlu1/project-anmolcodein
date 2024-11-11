@@ -1,0 +1,72 @@
+/*-------- GLOBAL STYLES ---------*/
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.5rem;
+    margin: 0;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    color: #F5F5DC;
+    line-height: 1.5;
+  }
+  /*-------- TYPOGRAPHY ---------*/
+
+h1 {
+    font-size: 3.8rem;
+    font-family: "Playfair Display", serif;
+    color: #2F4F2F;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  h2,
+  h3 {
+    color: #2F4F2F;
+    font-family: "Playfair Display", serif;
+  }
+  
+  h2 {
+    font-size: 35px;
+  }
+  
+  a {
+    color: #2F4F2F;
+    display: block;
+    margin: 16px 0;
+    padding: 12px 48px;
+    text-decoration: none;
+  }
+  
+  a.button {
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #D99152;
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 26px 0;
+  }
+
+  /*-------- UTILITY ---------*/
+  .content-width {
+    width: 334px;
+    margin: auto;
+  }
+/*-----------HEADER-----------------*/
+header{
+    background-color: #F5F5DC;
+}
+header img{
+    width:80px;
+    margin:8px;
+}
