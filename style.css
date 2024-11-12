@@ -32,7 +32,7 @@ h1 {
   
   h2,
   h3 {
-    color: #F5F5DC;
+    color: #2F4F2F;
     font-family: "Playfair Display", serif;
   }
   
@@ -55,8 +55,9 @@ h1 {
     border-radius: 4px;
     display: inline-block;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 26px 0;
+   
   }
 
   /*-------- UTILITY ---------*/
@@ -111,6 +112,9 @@ header nav ul{
     background-color: #2F4F2F;
     padding: 20% 10%;
 }
+.about h2{
+    color:#F5F5DC;
+}
 .about p{
     margin-top: 5%;
 }
@@ -122,11 +126,13 @@ header nav ul{
 }
 /*-------------------seasonal-highlights----------*/
 .seasonal-highlights{
-    background-color: #2F4F2F;
+    background-color: #F5F5DC;
+    color:#2F4F2F;
     margin:10% 5%;
     text-align: center;
-    
-
+}
+.seasonal-highlights h2{
+    color:#2F4F2F;
 }
 .seasonal-highlights img{
     width: 100%;
@@ -136,3 +142,33 @@ header nav ul{
     padding: 5%;
     text-align: left;
 }
+.seasonal-highlights a{
+    text-transform: capitalize;
+}
+/*--------------------------VISITOR SECTION--------------------*/
+.video-section {
+    position: relative;
+    height: 100vh; /* Adjust based on section height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2F4F2F;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.6; /* Adjust opacity for contrast */
+  }
+  
+  }
+  
