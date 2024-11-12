@@ -14,7 +14,7 @@
     margin: 0;
     font-family: "Lora", serif;
     font-weight: 400;
-    color: #F5F5DC;
+    color:#2F4F2F;
     line-height: 1.5;
   }
   /*-------- TYPOGRAPHY ---------*/
@@ -83,6 +83,7 @@ nav {
   }
 header nav ul{
     display: none;
+    list-style-type: none;
 }
 .show-items {
     display: flex;
@@ -107,6 +108,9 @@ header nav ul{
     color: #F5F5DC;
     margin-bottom: 20px;
 }
+.hero p{
+    color:#F5F5DC;
+}
 /*-------------ABOUT--------------------*/
 .about{
     background-color: #2F4F2F;
@@ -117,6 +121,7 @@ header nav ul{
 }
 .about p{
     margin-top: 5%;
+    color: #F5F5DC;
 }
 .about a{
     color:#D99152;
