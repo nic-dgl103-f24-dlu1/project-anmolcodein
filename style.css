@@ -214,3 +214,23 @@ header nav ul{
   
   text-transform: uppercase;
  }
+ /*--------------------------SIDEBAR-----------------------*/
+ .sidebar{
+  background-image: url("images/Sidebar.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+  text-align: left;
+ }
+ .sidebar p{
+  margin-bottom: 3%;
+ }
+ .sidebar span{
+  color:#D99152;
+  font-size: 2rem;
+ }
