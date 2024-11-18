@@ -39,7 +39,9 @@ h1 {
   h2 {
     font-size: 35px;
   }
-  
+  h3{
+    font-size: 28px;
+  }
   a {
     color: #2F4F2F;
     display: block;
@@ -187,4 +189,20 @@ header nav ul{
   .visitor-content p{
     margin-top: 5%;
   }
-  
+  /*--------------------------EVENTS------------------*/
+  .events .card{
+    margin:5%;
+  }
+ .card img{
+  width:100%;
+ }
+ .card p{
+  margin-top: 4%;
+ }
+ .card a{
+  color:#D99152;
+  text-decoration: underline;
+  padding:0;
+  margin-top: 5%;
+  text-transform: uppercase;
+ }
