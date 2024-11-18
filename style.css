@@ -78,6 +78,9 @@ h1 {
   h4{
     font-size: 3.5rem;
   }
+  a.button{
+    font-size: 2.5rem;
+  }
 }
 
   /*-------- UTILITY ---------*/
@@ -154,8 +157,6 @@ header nav ul{
   .hero a{
     margin-right: 70%;
     margin-top: 5%;
-    padding: 2%;
-    font-size: 2.5rem;
     text-align: center;
   }
 }
@@ -181,7 +182,8 @@ header nav ul{
 .seasonal-highlights{
     background-color: #F5F5DC;
     color:#2F4F2F;
-    margin:10% 5%;
+    margin:10% 3%;
+    padding-bottom: 5%;
     text-align: center;
 }
 .seasonal-highlights h2{
@@ -189,7 +191,7 @@ header nav ul{
 }
 .seasonal-highlights img{
     width: 100%;
-    height: 250px;
+    height: 50%;
 }
 .seasonal-highlights p{
     padding: 5%;
@@ -204,7 +206,7 @@ header nav ul{
 }
 .highlights-card img{
   width:90%;
-  height: 200px;
+  height: 40%;
 }
 .highlights-card p{
   padding: 0;
@@ -252,7 +254,6 @@ header nav ul{
   }
   .events h2{
     text-align: center;
-    padding-bottom: 5%;
   }
   .events .card{
     margin:10% 5%;
@@ -267,9 +268,9 @@ header nav ul{
   color:#D99152;
   text-decoration: underline;
   padding:0;
-  
   text-transform: uppercase;
  }
+ 
  /*--------------------------SIDEBAR-----------------------*/
  .sidebar{
   background-image: url("images/Sidebar.jpg");
@@ -291,6 +292,19 @@ header nav ul{
   color:#D99152;
   font-size: 2rem;
  }
+  /*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
+@media only screen and (min-width: 768px) { 
+  .sidebar{
+    min-height: 100vh;
+    padding: 0 25%;
+  }
+  .sidebar span{
+    font-size: 4rem;
+  }
+  .sidebar h4{
+    margin:3% 0;
+  }
+}
  /*------------------------FOOTER------------------------------*/
  .footer-nav{
   text-align: center;
