@@ -27,8 +27,6 @@ h1 {
     line-height: 1.3;
     font-weight: 700;
     margin-top: 0;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   
   h2,
@@ -66,9 +64,6 @@ h1 {
   p{
     font-size: 3rem;
   }
-  a{
-    font-size: 2.5rem;
-  }
   h2{
     font-size:5rem ;
   }
@@ -78,10 +73,19 @@ h1 {
   h4{
     font-size: 3.5rem;
   }
-  a.button{
+  a, a.button{
     font-size: 2.5rem;
   }
 }
+ /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+ @media only screen and (min-width: 1200px) {
+  p{
+    font-size: 2rem;
+  }
+  a, a.button{
+    font-size: 1.5rem;
+  }
+ }
 
   /*-------- UTILITY ---------*/
   .content-width {
@@ -118,6 +122,23 @@ header nav ul{
     font-size: 30px;
     color:#2F4F2F;
   }
+  /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  header{
+    background-color: #f5f5dc03;
+    align-items: center;
+  }
+  .toggle{
+    display: none;
+  }
+  header nav ul{
+    display: flex;
+    justify-content: center;
+  }
+  header nav ul li a{
+    color:#F5F5DC;
+  }
+}
 /*---------------HERO---------------------*/
 .hero{
     background-image: url("images/hero.png");
@@ -137,7 +158,7 @@ header nav ul{
 /*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
 @media only screen and (min-width: 768px) {
   .hero{
-    min-height: 80vh;
+    min-height: 100vh;
   }
   .hero{
     display: flex;
@@ -148,16 +169,22 @@ header nav ul{
     padding:0 10% ;
   }
   .hero h1{
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     line-height: 1.5;
-  }
-  .hero p{
-    font-size: 3rem;
   }
   .hero a{
     margin-right: 70%;
     margin-top: 5%;
     text-align: center;
+  }
+}
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  .hero{
+    margin-top: -150px;
+  }
+  .hero a{
+    margin-right: 85%;
   }
 }
 /*-------------ABOUT--------------------*/
