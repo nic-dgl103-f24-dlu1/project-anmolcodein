@@ -16,6 +16,7 @@
     font-weight: 400;
     color:#2F4F2F;
     line-height: 1.5;
+    background-color: whitesmoke;
   }
   /*-------- TYPOGRAPHY ---------*/
 
@@ -40,7 +41,7 @@ h1 {
     font-size: 35px;
   }
   h3{
-    font-size: 28px;
+    font-size: 25px;
   }
   a {
     color: #2F4F2F;
@@ -190,19 +191,26 @@ header nav ul{
     margin-top: 5%;
   }
   /*--------------------------EVENTS------------------*/
+  .events{
+    margin:10% 0;
+  }
+  .events h2{
+    text-align: center;
+    padding-bottom: 5%;
+  }
   .events .card{
-    margin:5%;
+    margin:10% 5%;
   }
  .card img{
   width:100%;
  }
  .card p{
-  margin-top: 4%;
+  margin-top: 3%;
  }
  .card a{
   color:#D99152;
   text-decoration: underline;
   padding:0;
-  margin-top: 5%;
+  
   text-transform: uppercase;
  }
