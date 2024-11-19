@@ -51,7 +51,6 @@ h1 {
   
   a.button {
     color: #ffffff;
-    text-transform: uppercase;
     background-color: #D99152;
     border-radius: 4px;
     display: inline-block;
@@ -74,7 +73,7 @@ h1 {
     font-size: 3.5rem;
   }
   a, a.button{
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
  /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
@@ -83,7 +82,16 @@ h1 {
     font-size: 2rem;
   }
   a, a.button{
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 4rem;
+  }
+  h3{
+    font-size: 3.5rem;
+  }
+  h4{
+    font-size: 2.5rem;
   }
  }
 
@@ -205,6 +213,12 @@ header nav ul{
     margin-left: 0;
     padding-left: 0;
 }
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+ .about{
+  padding:10%;
+ }
+}
 /*-------------------seasonal-highlights----------*/
 .seasonal-highlights{
     background-color: #F5F5DC;
@@ -237,6 +251,31 @@ header nav ul{
 }
 .highlights-card p{
   padding: 0;
+}
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  .seasonal-highlights{
+    padding:5%;
+    display:flex;
+    flex-direction: row-reverse;
+  }
+  .seasonal-highlights img{
+    width:40%;
+  }
+  .highlights-cards{
+    display: flex;
+  }
+  .highlights-card{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .highlights-card img{
+    width:70%;
+    height: 50%;
+    border-radius: 10px;
+  }
+  
 }
 /*--------------------------VISITOR SECTION--------------------*/
 .video-section {
@@ -275,6 +314,14 @@ header nav ul{
   .visitor-content p{
     margin-top: 5%;
   }
+  /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  .visitor-content{
+    height: 80%;
+    margin: 20%;
+    padding: 10% 5%;
+  }
+}
   /*--------------------------EVENTS------------------*/
   .events{
     margin:10% 0;
