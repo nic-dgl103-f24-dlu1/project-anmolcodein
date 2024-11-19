@@ -147,6 +147,8 @@ header nav ul{
     color:#F5F5DC;
   }
 }
+/*----------------MAIN--------------------*/
+
 /*---------------HERO---------------------*/
 .hero{
     background-image: url("images/hero.png");
@@ -344,7 +346,19 @@ header nav ul{
   padding:0;
   text-transform: uppercase;
  }
- 
+ /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  .events .card{
+    display: flex;
+    gap: 5%;
+    align-items:center;
+    justify-content: space-around;
+    margin: 3% 10%;
+  }
+  .card img{
+    width: 50%;
+  }
+}
  /*--------------------------SIDEBAR-----------------------*/
  .sidebar{
   background-image: url("images/Sidebar.jpg");
