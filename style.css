@@ -1,366 +1,413 @@
 /*-------- GLOBAL STYLES ---------*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
-  
-  body {
-    font-size: 1.5rem;
-    margin: 0;
-    font-family: "Lora", serif;
-    font-weight: 400;
-    color:#2F4F2F;
-    line-height: 1.5;
-    background-color: whitesmoke;
-  }
-  /*-------- TYPOGRAPHY ---------*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  margin: 0;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #2F4F2F;
+  line-height: 1.5;
+  background-color: whitesmoke;
+}
+
+/*-------- TYPOGRAPHY ---------*/
 
 h1 {
-    font-size: 3.8rem;
-    font-family: "Playfair Display", serif;
-    color: #F5F5DC;
-    line-height: 1.3;
-    font-weight: 700;
-    margin-top: 0;
-  }
-  
-  h2,
-  h3 {
-    color: #2F4F2F;
-    font-family: "Playfair Display", serif;
-  }
-  
-  h2 {
-    font-size: 35px;
-  }
-  h3{
-    font-size: 25px;
-  }
-  a {
-    color: #2F4F2F;
-    display: block;
-    margin: 16px 0;
-    padding: 12px 48px;
-    text-decoration: none;
-  }
-  
-  a.button {
-    color: #ffffff;
-    background-color: #D99152;
-    border-radius: 4px;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1.3rem;
-    margin: 26px 0;  
-  }
-  /*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
-@media only screen and (min-width: 768px) {
-  p{
-    font-size: 3rem;
-  }
-  h2{
-    font-size:5rem ;
-  }
-  h3{
-    font-size: 4.5rem;
-  }
-  h4{
-    font-size: 3.5rem;
-  }
-  a, a.button{
-    font-size: 3rem;
-  }
+  font-size: 3.8rem;
+  font-family: "Playfair Display", serif;
+  color: #F5F5DC;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-top: 0;
 }
- /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
- @media only screen and (min-width: 1200px) {
-  p{
-    font-size: 2rem;
-  }
-  a, a.button{
-    font-size: 2rem;
-  }
-  h2{
-    font-size: 4rem;
-  }
-  h3{
-    font-size: 3.5rem;
-  }
-  h4{
-    font-size: 2.5rem;
-  }
- }
 
-  /*-------- UTILITY ---------*/
-  .content-width {
-    width: 334px;
-    margin: auto;
-  }
-/*-----------HEADER-----------------*/
-header{
-    background-color: #F5F5DC;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+h2,
+h3 {
+  color: #2F4F2F;
+  font-family: "Playfair Display", serif;
 }
-header img{
-    max-width:100px;
-    margin:2%;
-}
-nav {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-  }
-header nav ul{
-    display: none;
-    list-style-type: none;
-}
-.show-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.toggle .fa-bars {
-    font-size: 30px;
-    color:#2F4F2F;
-  }
-  /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
-@media only screen and (min-width: 1200px) {
-  header{
-    background-color: #f5f5dc03;
-    align-items: center;
-  }
-  .toggle{
-    display: none;
-  }
-  header nav ul{
-    display: flex;
-    justify-content: center;
-  }
-  header nav ul li a{
-    color:#F5F5DC;
-  }
-}
-/*----------------MAIN--------------------*/
 
-/*---------------HERO---------------------*/
-.hero{
-    background-image: url("images/hero.png");
-    background-repeat: none;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 100px 10px;
+h2 {
+  font-size: 35px;
 }
-.hero h1{
-    color: #F5F5DC;
-    margin-bottom: 20px;
+
+a {
+  color: #2F4F2F;
+  display: block;
+  margin: 16px 0;
+  padding: 15px 48px;
+  text-decoration: none;
 }
-.hero p{
-    color:#F5F5DC;
+
+a.button {
+  color: #ffffff;
+  background-color: #D99152;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 26px 0;
 }
 /*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
 @media only screen and (min-width: 768px) {
-  .hero{
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+/*-------- UTILITY ---------*/
+.content-width {
+  width: 334px;
+  margin: auto;
+}
+
+/*-----------HEADER-----------------*/
+header {
+  background-image: url("images/hero.png");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.nav-header {
+  background-color: #233923c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nav-header img {
+  max-width: 100px;
+  margin: 2%;
+}
+
+nav {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav ul {
+  display: none;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #F5F5DC;
+}
+
+.show-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle .fa-bars {
+  font-size: 30px;
+  color: #F5F5DC;
+}
+
+/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
+@media only screen and (min-width: 768px) {
+  header {
+    min-height: 80vh;
+  }
+  .toggle{
+    margin-top: 25%;
+  }
+}
+
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  header{
     min-height: 100vh;
   }
-  .hero{
+   .nav-header{
+    align-items: center;
+   }
+   .nav-header img{
+    margin:1%;
+   }
+  .toggle {
+    display: none;
+  }
+
+  header nav ul {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    text-align: left;
-    padding:0 10% ;
+  }
+
+  header nav ul li a {
+    color: #F5F5DC;
+  }
+}
+
+/*---------------HERO---------------------*/
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 5%;
+  margin-top: 20%;
+}
+
+.hero h1 {
+  color: #F5F5DC;
+  margin-bottom: 5%;
+}
+
+.hero p {
+  color: #F5F5DC;
+}
+
+.hero a {
+  margin: 10% 25%;
+}
+
+/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
+@media only screen and (min-width: 768px) {
+  .hero {
+    margin-top: 30%;
+    padding: 0 15%;
+  }
+
+  .hero a {
+    text-align: center;
+    margin: 10% 35%;
+  }
+}
+
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  .hero{
+    margin-top: 10%;
   }
   .hero h1{
-    font-size: 5.5rem;
-    line-height: 1.5;
-  }
-  .hero a{
-    margin-right: 70%;
-    margin-top: 5%;
-    text-align: center;
-  }
-}
-/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
-@media only screen and (min-width: 1200px) {
-  .hero{
-    margin-top: -150px;
-  }
-  .hero a{
-    margin-right: 85%;
-  }
-}
-/*-------------ABOUT--------------------*/
-.about{
-    background-color: #2F4F2F;
-    padding: 20% 10%;
-}
-.about h2{
-    color:#F5F5DC;
-}
-.about p{
-    margin-top: 5%;
-    color: #F5F5DC;
-}
-.about a{
-    color:#D99152;
-    text-decoration: underline;
-    margin-left: 0;
+    margin-bottom: 2%;
+    font-size: 6.6rem;
+    font-weight: 400;
     padding-left: 0;
+    padding-right: 0;
+  }
+  .hero a{
+    margin: 5% 40%;
+    font-size: 1.8rem;
+  }
+  
 }
+
+/*----------------MAIN--------------------*/
+
+
+
+/*-------------ABOUT--------------------*/
+.about {
+  background-color: #2F4F2F;
+  padding: 20% 10%;
+}
+
+.about h2 {
+  color: #F5F5DC;
+}
+
+.about p {
+  margin-top: 5%;
+  color: #F5F5DC;
+}
+
+.about a {
+  color: #D99152;
+  text-decoration: underline;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
- .about{
-  padding:10%;
- }
+  .about {
+    padding: 10%;
+  }
 }
+
 /*-------------------seasonal-highlights----------*/
-.seasonal-highlights{
-    background-color: #F5F5DC;
-    color:#2F4F2F;
-    margin:10% 3%;
-    padding-bottom: 5%;
-    text-align: center;
+.seasonal-highlights {
+  background-color: #F5F5DC;
+  color: #2F4F2F;
+  margin: 10% 3%;
+  padding-bottom: 5%;
+  text-align: center;
 }
-.seasonal-highlights h2{
-    color:#2F4F2F;
+
+.seasonal-highlights h2 {
+  color: #2F4F2F;
 }
-.seasonal-highlights img{
-    width: 100%;
-    height: 50%;
+
+.seasonal-highlights img {
+  width: 100%;
+  height: 50%;
 }
-.seasonal-highlights p{
-    padding: 5%;
-    text-align: left;
-}
-.seasonal-highlights a{
-    text-transform: capitalize;
-}
-.highlights-card{
+
+.seasonal-highlights p {
+  padding: 5%;
   text-align: left;
-  margin:5%;
 }
-.highlights-card img{
-  width:90%;
+
+.seasonal-highlights a {
+  text-transform: capitalize;
+}
+
+.highlights-card {
+  text-align: left;
+  margin: 5%;
+}
+
+.highlights-card img {
+  width: 90%;
   height: 40%;
 }
-.highlights-card p{
+
+.highlights-card p {
   padding: 0;
 }
+
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
-  .seasonal-highlights{
-    padding:5%;
-    display:flex;
+  .seasonal-highlights {
+    padding: 5%;
+    display: flex;
     flex-direction: row-reverse;
   }
-  .seasonal-highlights img{
-    width:40%;
+
+  .seasonal-highlights img {
+    width: 40%;
   }
-  .highlights-cards{
+
+  .highlights-cards {
     display: flex;
   }
-  .highlights-card{
+
+  .highlights-card {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .highlights-card img{
-    width:70%;
+
+  .highlights-card img {
+    width: 70%;
     height: 50%;
     border-radius: 10px;
   }
-  
+
 }
+
 /*--------------------------VISITOR SECTION--------------------*/
 .video-section {
-    position: relative;
-    height: 100vh; /* Adjust based on section height */
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #2F4F2F;
-  }
-  
-  .background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0.6; /* Adjust opacity for contrast */
-  }
-  
-  .visitor-content {
-    position: relative;
-    z-index: 1;
-    background-color: #f5f5dca8;
-    margin-left: 3%;
-    margin-right: 3%;
-    padding:20% 5%;
-    border-radius: 10px;
-  }
-  .visitor-content p{
-    margin-top: 5%;
-  }
-  /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+  position: relative;
+  height: 100vh;
+  /* Adjust based on section height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #2F4F2F;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0.6;
+  /* Adjust opacity for contrast */
+}
+
+.visitor-content {
+  position: relative;
+  z-index: 1;
+  background-color: #f5f5dca8;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 20% 5%;
+  border-radius: 10px;
+}
+
+.visitor-content p {
+  margin-top: 5%;
+}
+
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
-  .visitor-content{
+  .visitor-content {
     height: 80%;
     margin: 20%;
     padding: 10% 5%;
   }
 }
-  /*--------------------------EVENTS------------------*/
-  .events{
-    margin:10% 0;
-  }
-  .events h2{
-    text-align: center;
-  }
-  .events .card{
-    margin:10% 5%;
-  }
- .card img{
-  width:100%;
- }
- .card p{
+
+/*--------------------------EVENTS------------------*/
+.events {
+  margin: 10% 0;
+}
+
+.events h2 {
+  text-align: center;
+}
+
+.events .card {
+  margin: 10% 5%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
   margin-top: 3%;
- }
- .card a{
-  color:#D99152;
+}
+
+.card a {
+  color: #D99152;
   text-decoration: underline;
-  padding:0;
+  padding: 0;
   text-transform: uppercase;
- }
- /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+}
+
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
-  .events .card{
+  .events .card {
     display: flex;
     gap: 5%;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     margin: 3% 10%;
   }
-  .card img{
+
+  .card img {
     width: 50%;
   }
 }
- /*--------------------------SIDEBAR-----------------------*/
- .sidebar{
+
+/*--------------------------SIDEBAR-----------------------*/
+.sidebar {
   background-image: url("images/Sidebar.jpg");
   background-position: center;
   background-size: cover;
@@ -372,54 +419,66 @@ header nav ul{
   padding: 0 15%;
   text-align: left;
   margin: 20% 0;
- }
- .sidebar p{
+}
+
+.sidebar p {
   margin-bottom: 3%;
- }
- .sidebar span{
-  color:#D99152;
+}
+
+.sidebar span {
+  color: #D99152;
   font-size: 2rem;
- }
-  /*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
-@media only screen and (min-width: 768px) { 
-  .sidebar{
+}
+
+/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
+@media only screen and (min-width: 768px) {
+  .sidebar {
     min-height: 100vh;
     padding: 0 25%;
   }
-  .sidebar span{
+
+  .sidebar span {
     font-size: 4rem;
   }
-  .sidebar h4{
-    margin:3% 0;
+
+  .sidebar h4 {
+    margin: 3% 0;
   }
 }
- /*------------------------FOOTER------------------------------*/
- .footer-nav{
+
+/*------------------------FOOTER------------------------------*/
+.footer-nav {
   text-align: center;
- }
- .social-links{
-  display:flex;
+}
+
+.social-links {
+  display: flex;
   justify-content: center;
-  gap:10%;
- }
- .social-links a{
+  gap: 10%;
+}
+
+.social-links a {
   padding: 0;
- }
- .footer i{
-  color:#2F4F2F;
+}
+
+.footer i {
+  color: #2F4F2F;
   padding-right: 20px;
- }
- .footer-footer{
+}
+
+.footer-footer {
   text-align: center;
-  margin:5% 10%;
- }
- .footer-footer p{
+  margin: 5% 10%;
+}
+
+.footer-footer p {
   color: grey;
- }
-  /*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
-@media only screen and (min-width: 768px) { 
-  .footer-nav{
-    display:flex;
+}
+
+/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
+@media only screen and (min-width: 768px) {
+  .footer-nav {
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
