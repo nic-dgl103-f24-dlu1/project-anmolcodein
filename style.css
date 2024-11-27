@@ -66,20 +66,28 @@ a.button:hover{
   background: #3d673d;
   transform: scale(1.05);
 }
-
-/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 1.6rem;
-  }
-}
-
 /*-------- UTILITY ---------*/
 .content-width {
   width: 334px;
   margin: auto;
 }
 
+/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+  .content-width {
+    width: 690px;
+  }
+}
+
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+.content-width {
+  width: 1130px;
+}
+}
 /*-----------HEADER-----------------*/
 header {
   background-image: url("images/hero.png");
@@ -227,56 +235,6 @@ header nav ul li a {
 
 /*----------------MAIN--------------------*/
 
-/*-------------ABOUT--------------------*/
-.about {
-  background-color: #2F4F2F;
-  padding: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.about img{
-  width:100%;
-}
-.about h2 {
-  color: #F5F5DC;
-  text-align: center;
-}
-.about h3{
-  color:#F5F5DC;
-  font-size: 3rem;
-}
-.about p {
-  margin-top: 5%;
-  color: #F5F5DC;
-}
-
-.about a{
-  color: #D99152;
-  text-decoration: underline;
-  margin-left: 0;
-  padding-left: 0;
-}
-/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
-@media only screen and (min-width: 768px) {
-  .about{
-    gap:20px;
-  }
-  
-}
-
-/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
-@media only screen and (min-width: 1200px) {
-  .about {
-    padding: 10%;
-    flex-direction: row-reverse;
-  }
-  .about img{
-    width:50%;
-  }
-}
-
 /*-------------------seasonal-highlights----------*/
 .seasonal{
   background-color: #F5F5DC;
@@ -367,7 +325,6 @@ figure:hover figcaption {
   .figure-section{
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
     margin-left: 5%;
   }
   figure img{
@@ -488,7 +445,41 @@ figure:hover figcaption {
     width: 50%;
   }
 }
+/*-------------ABOUT--------------------*/
+.about {
+  background-color: #2F4F2F;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about h2 {
+  color: #F5F5DC;
+  text-align: center;
+}
+.about h3{
+  color:#F5F5DC;
+  font-size: 3rem;
+}
+.about p {
+  margin-top: 5%;
+  color: #F5F5DC;
+}
 
+.about a{
+  color: #D99152;
+  text-decoration: underline;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  .about {
+    padding: 10%;
+  }
+}
 /*--------------------------SIDEBAR-----------------------*/
 .sidebar {
   background-image: url("images/Sidebar.jpg");
