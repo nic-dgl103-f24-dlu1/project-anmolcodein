@@ -26,7 +26,7 @@ h1 {
   font-family: "Playfair Display", serif;
   color: #F5F5DC;
   line-height: 1.3;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 0;
 }
 
@@ -34,10 +34,10 @@ h2,
 h3 {
   color: #2F4F2F;
   font-family: "Playfair Display", serif;
+  font-weight: 400;
 }
-
-h2 {
-  font-size: 35px;
+h2{
+  font-size: 3rem;
 }
 
 a {
@@ -46,8 +46,12 @@ a {
   margin: 16px 0;
   padding: 15px 48px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
-
+a:hover{
+  text-decoration: underline;
+  transform: scale(1.05);
+}
 a.button {
   color: #ffffff;
   background-color: #D99152;
@@ -56,7 +60,13 @@ a.button {
   text-decoration: none;
   font-size: 1.3rem;
   margin: 26px 0;
+  transition: all 0.3s ease;
 }
+a.button:hover{
+  background: #3d673d;
+  transform: scale(1.05);
+}
+
 /*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
 @media only screen and (min-width: 768px) {
   body {
@@ -176,6 +186,12 @@ header nav ul li a {
 .hero a {
   margin: 10% 25%;
 }
+.hero a.button:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #D99152;
+  color:#D99152;
+
+}
 
 /*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
 @media only screen and (min-width: 768px) {
@@ -211,43 +227,64 @@ header nav ul li a {
 
 /*----------------MAIN--------------------*/
 
-
-
 /*-------------ABOUT--------------------*/
 .about {
   background-color: #2F4F2F;
-  padding: 20% 10%;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+.about img{
+  width:100%;
+}
 .about h2 {
   color: #F5F5DC;
+  text-align: center;
 }
-
+.about h3{
+  color:#F5F5DC;
+  font-size: 3rem;
+}
 .about p {
   margin-top: 5%;
   color: #F5F5DC;
 }
 
-.about a {
+.about a{
   color: #D99152;
   text-decoration: underline;
   margin-left: 0;
   padding-left: 0;
+}
+/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
+@media only screen and (min-width: 768px) {
+  .about{
+    gap:20px;
+  }
+  
 }
 
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
   .about {
     padding: 10%;
+    flex-direction: row-reverse;
+  }
+  .about img{
+    width:50%;
   }
 }
 
 /*-------------------seasonal-highlights----------*/
-.seasonal-highlights {
+.seasonal{
   background-color: #F5F5DC;
-  color: #2F4F2F;
-  margin: 10% 3%;
   padding-bottom: 5%;
+}
+.seasonal-highlights {
+  color: #2F4F2F;
+  margin:3%;
   text-align: center;
 }
 
@@ -268,49 +305,95 @@ header nav ul li a {
 .seasonal-highlights a {
   text-transform: capitalize;
 }
-
-.highlights-card {
-  text-align: left;
-  margin: 5%;
+/*-----------Figure section------------*/
+.figure-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap:10px;
+}
+figure {
+  display: grid;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
 }
 
-.highlights-card img {
-  width: 90%;
-  height: 40%;
+figure img {
+  width: 30rem;
+  height:20rem;
+  transition: transform 0.4s;
 }
 
-.highlights-card p {
-  padding: 0;
+figure figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #F5F5DC;
+  font-size: 2.3rem;
+  font-weight: bold;
+  transform: translateY(10);
+  transition: transform 0.5s;
+  display: none;
+}
+figcaption.berries{
+  background: rgba(65, 2, 2, 0.6);
+}
+figcaption.coneflower{
+  background: rgba(87, 51, 5, 0.6);
+}
+figcaption.winter-heather{
+  background: rgba(44, 2, 61, 0.6);
+}
+figcaption.witch-hazel{
+  background-color: rgba(101, 46, 4, 0.6) ;
 }
 
+figure:hover img {
+  transform: scale(1.2);
+}
+figure:hover figcaption {
+  transform: translateY(0%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
+@media only screen and (min-width: 768px) {
+  .figure-section{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 5%;
+  }
+  figure img{
+    width: 45rem;
+    height: 30rem;
+  }
+}
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
   .seasonal-highlights {
     padding: 5%;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
   }
-
   .seasonal-highlights img {
     width: 40%;
   }
-
-  .highlights-cards {
-    display: flex;
+  .figure-section{
+    flex-direction: row;
+    justify-content: center;
   }
-
-  .highlights-card {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
+  figure img{
+    width:50rem;
   }
-
-  .highlights-card img {
-    width: 70%;
-    height: 50%;
-    border-radius: 10px;
-  }
-
 }
 
 /*--------------------------VISITOR SECTION--------------------*/
