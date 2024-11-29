@@ -237,8 +237,7 @@ header nav ul li a {
 
 /*-------------------seasonal-highlights----------*/
 .seasonal{
-  background-color: #F5F5DC;
-  padding-bottom: 5%;
+  padding: 5% 0;
 }
 .seasonal-highlights {
   color: #2F4F2F;
@@ -334,15 +333,9 @@ figure:hover figcaption {
 }
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
-  .seasonal-highlights {
-    padding: 5%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  .seasonal-highlights img {
-    width: 40%;
+  .seasonal-highlights{
+    padding: 5%;  
+    padding-top: 0;
   }
   .figure-section{
     flex-direction: row;
@@ -445,6 +438,16 @@ figure:hover figcaption {
     width: 50%;
   }
 }
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+.home-grid{
+  display:grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  justify-content: space-around;
+  gap:1%;
+}
+}
 /*-------------ABOUT--------------------*/
 .about {
   background-color: #2F4F2F;
@@ -485,14 +488,14 @@ figure:hover figcaption {
   background-image: url("images/Sidebar.jpg");
   background-position: center;
   background-size: cover;
-  height: 70rem;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 15%;
-  text-align: left;
-  margin: 20% 0;
+  text-align: center;
+  margin: 5% 0;
 }
 
 .sidebar p {
@@ -507,19 +510,29 @@ figure:hover figcaption {
 /*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
 @media only screen and (min-width: 768px) {
   .sidebar {
-    min-height: 100vh;
-    padding: 0 25%;
+    height: 50vh;
+    padding: 0 10%;   
   }
-
+  .sidebar h2{
+    margin:0 20%;
+  }
   .sidebar span {
     font-size: 4rem;
   }
-
   .sidebar h4 {
     margin: 3% 0;
   }
 }
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  .sidebar{
+    height: 100vh;
+    margin:0;
+    padding: 2% 10%;
+    text-align: center;
+  }
 
+}
 /*------------------------FOOTER------------------------------*/
 .footer-nav {
   text-align: center;
