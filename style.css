@@ -102,11 +102,11 @@ a.button:hover{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 1rem 2rem;
 }
 
 .nav-header img {
   max-width: 100px;
-  margin: 2%;
 }
 
 nav {
@@ -548,7 +548,7 @@ figure:hover figcaption {
   padding: 0;
 }
 
-.footer i {
+.footer i{
   color: #2F4F2F;
   padding-right: 20px;
 }
@@ -573,3 +573,6 @@ figure:hover figcaption {
 }
 
 /*---------------------------------------ABOUT-------------------------------*/
+.header-about{
+  background-color: #3d673d;
+}
