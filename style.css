@@ -654,7 +654,7 @@ header nav ul li a {
   }
 }
 /*---------------------------GALLERY-----------------------------------*/
-.gallery{
+.grid-wrapper{
   background-color: #fff;
   padding: 20px;
   margin-top: 20px;
@@ -666,5 +666,30 @@ header nav ul li a {
   height: 100%;
 	object-fit: cover;
 	border-radius: 5px;
+}
+/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
+@media only screen and (min-width: 768px) {
+  .grid-wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+  }
+  .grid-wrapper .wide {
+    grid-column: span 2;
+  }
+  .grid-wrapper .tall {
+    grid-row: span 2;
+  }
+  .grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
   
 }
