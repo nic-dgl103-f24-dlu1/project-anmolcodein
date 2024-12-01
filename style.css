@@ -117,7 +117,6 @@ nav {
 }
 
 header nav ul {
-  display: none;
   list-style-type: none;
 }
 
@@ -164,7 +163,7 @@ header nav ul li a {
     display: none;
   }
 
-  .header nav ul {
+  .nav-header ul {
     display: flex;
     justify-content: center;
   }
@@ -299,16 +298,16 @@ header nav ul li a {
   transition: transform 0.5s;
   display: none;
 }
-figcaption.berries{
+.figure-section figcaption.berries{
   background: rgba(65, 2, 2, 0.6);
 }
-figcaption.coneflower{
+.figure-section figcaption.coneflower{
   background: rgba(87, 51, 5, 0.6);
 }
-figcaption.winter-heather{
+.figure-section figcaption.winter-heather{
   background: rgba(44, 2, 61, 0.6);
 }
-figcaption.witch-hazel{
+.figure-section figcaption.witch-hazel{
   background-color: rgba(101, 46, 4, 0.6) ;
 }
 
@@ -400,10 +399,9 @@ figcaption.witch-hazel{
 }
 
 /*--------------------------EVENTS------------------*/
-.events {
-  margin: 10% 0;
+.events{
+  padding: 5% 0;
 }
-
 .events h2 {
   text-align: center;
 }
@@ -429,6 +427,7 @@ figcaption.witch-hazel{
 
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
+ 
   .events .card {
     display: flex;
     gap: 5%;
@@ -441,17 +440,8 @@ figcaption.witch-hazel{
     width: 50%;
   }
 }
-/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
-@media only screen and (min-width: 1200px) {
-.home-grid{
-  display:grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 1fr;
-  justify-content: space-around;
-  gap:1%;
-}
-}
-/*-------------ABOUT--------------------*/
+
+/*-------------ABOUT Home--------------------*/
 .about-home {
   background-color: #2F4F2F;
   padding: 10%;
@@ -536,6 +526,16 @@ figcaption.witch-hazel{
   }
 
 }
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  .home-grid{
+    display:grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+    gap:1%;
+  }
+  }
 /*------------------------FOOTER------------------------------*/
 .footer-nav {
   text-align: center;
@@ -567,6 +567,9 @@ figcaption.witch-hazel{
 
 /*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
 @media only screen and (min-width: 768px) {
+  footer{
+    padding-top: 5%;
+  }
   .footer-nav {
     display: flex;
     justify-content: space-evenly;
@@ -593,7 +596,7 @@ figcaption.witch-hazel{
   justify-content: space-between;
 }
 .header-style hr{
-  height: 2px;
+  height: 1px;
   background-color: #2F4F2F;
   width: 27%;
 }
@@ -641,6 +644,9 @@ figcaption.witch-hazel{
 @media only screen and (min-width: 1200px) {
   .about figure img{
     width: 50rem;
+  }
+  .header-style{
+    margin-top: 3%;
   }
   .header-style hr{
     width:43%;
