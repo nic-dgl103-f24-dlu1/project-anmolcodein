@@ -583,12 +583,19 @@ figcaption.witch-hazel{
   padding: 20px;
 }
 
-.about h1 {
+.about h1,h2,h3 {
   text-align: center;
   color:#2F4F2F;
 }
-.about h2, h3{
-  text-align: center;
+.header-style{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-style hr{
+  height: 2px;
+  background-color: #2F4F2F;
+  width: 27%;
 }
 .about article {
   background-color: #fff;
@@ -597,10 +604,6 @@ figcaption.witch-hazel{
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   
-}
-
-.about p {
-  font-size: 1rem;
 }
 .about figure {
   text-align: center;
@@ -616,9 +619,7 @@ figcaption.witch-hazel{
 }
 /*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
 @media only screen and (min-width: 768px) {
-  .about h3{
-    margin-top: 3%;
-  }
+ 
   .about .about-container{
     display: flex;
     justify-content: center; 
@@ -632,6 +633,17 @@ figcaption.witch-hazel{
   .about figure img{
     width: 25rem;
   }
+  .header-style hr{
+    width:40%;
+  }
 }
-
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  .about figure img{
+    width: 50rem;
+  }
+  .header-style hr{
+    width:43%;
+  }
+}
 
