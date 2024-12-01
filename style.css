@@ -312,10 +312,10 @@ figcaption.witch-hazel{
   background-color: rgba(101, 46, 4, 0.6) ;
 }
 
-figure:hover img {
+.figure-section figure:hover img {
   transform: scale(1.2);
 }
-figure:hover figcaption {
+.figure-section figure:hover figcaption {
   transform: translateY(0%);
   height: 100%;
   display: flex;
@@ -585,15 +585,18 @@ figure:hover figcaption {
 
 .about h1 {
   text-align: center;
-  font-size: 1.8rem;
+  color:#2F4F2F;
 }
-
+.about h2, h3{
+  text-align: center;
+}
 .about article {
   background-color: #fff;
   padding: 20px;
   margin-top: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
 }
 
 .about p {
@@ -601,12 +604,34 @@ figure:hover figcaption {
 }
 .about figure {
   text-align: center;
+  margin:5% 0;
 }
 .about figure img{
-  width:100%;
+  width:100%; 
 }
 .about figcaption {
   font-style: italic;
   font-size: 0.9rem;
   color: #666;
 }
+/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
+@media only screen and (min-width: 768px) {
+  .about h3{
+    margin-top: 3%;
+  }
+  .about .about-container{
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    gap:2%;
+    margin-top: 5%;
+  }
+  .about figure{
+    margin:0;
+  }
+  .about figure img{
+    width: 25rem;
+  }
+}
+
+
