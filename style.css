@@ -717,6 +717,9 @@ header nav ul li a {
   background-color: #3d673d;
   color: white;
 }
+.location ul{
+  list-style: none;
+}
 /* Contact Form */
 form {
   display: flex;
@@ -731,7 +734,6 @@ form {
 form label {
   font-weight: bold;
 }
-
 form input, form textarea, form button {
   padding: 10px;
   border: 1px solid #ddd;
@@ -742,4 +744,51 @@ form input, form textarea, form button {
 iframe{
   width:100%;
 }
+/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
+@media only screen and (min-width: 768px) {
+  .visit, .contact{
+    text-align: center;
+  }
+  .contact form {
+    width: 50%;
+    margin: 0 auto;
+}
 
+.visit table {
+    max-width: 700px;
+    margin: 0 auto;
+}
+}
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  .visit{
+    margin: 5% 0;
+  }
+  .contact h2{
+    margin:2%;
+  }
+  .location{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top:5%;
+  }
+  .location table{
+    margin:0;
+  }
+  .location .figure{
+    margin-left:5%;
+  }
+  .location .figure img{
+    height: 70rem;
+  }
+  .location form{
+    margin:0;
+  }
+  .location form .button{
+    margin:3% 25%;
+  }
+  .location iframe{
+    width: 50rem;
+  }
+}
