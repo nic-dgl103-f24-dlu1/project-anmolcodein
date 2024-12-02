@@ -695,10 +695,13 @@ header nav ul li a {
 }
 /*----------------------CONTACT------------------------------*/
 /*-----------Visitor section----------------------*/
-
+.visit{
+  margin:5% 0;
+}
 .visit h1, .visit h2, .contact h1, .contact h2 {
   text-align: center;
   color:#3d673d;
+  margin:5% 0;
 }
 .visit table {
   width: 100%;
