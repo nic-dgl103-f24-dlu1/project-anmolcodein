@@ -739,5 +739,7 @@ form input, form textarea, form button {
   border-radius: 4px;
   font-size: 1rem;
 }
-
+iframe{
+  width:100%;
+}
 
