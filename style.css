@@ -52,7 +52,7 @@ a:hover{
   text-decoration: underline;
   transform: scale(1.05);
 }
-a.button {
+a.button, .button {
   color: #ffffff;
   background-color: #D99152;
   border-radius: 4px;
@@ -62,7 +62,7 @@ a.button {
   margin: 26px 0;
   transition: all 0.3s ease;
 }
-a.button:hover{
+a.button:hover, .button:hover{
   background: #3d673d;
   transform: scale(1.05);
 }
@@ -695,10 +695,10 @@ header nav ul li a {
 }
 /*----------------------CONTACT------------------------------*/
 /*-----------Visitor section----------------------*/
+
 .visit h1, .visit h2, .contact h1, .contact h2 {
   text-align: center;
-  margin-top: 20px;
-  font-size: 1.8rem;
+  color:#3d673d;
 }
 .visit table {
   width: 100%;
@@ -707,11 +707,37 @@ header nav ul li a {
 }
 .visit table th, .visit table td {
   text-align: center;
-  padding: 10px;
-  border: 1px solid #ddd;
+  padding: 10px;  
+  border:1px solid #F5F5DC;
 }
-
+.visit table .even-row{
+  background-color: #F5F5DC;
+}
 .visit table th {
-  background-color: #333;
+  background-color: #3d673d;
   color: white;
 }
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea, form button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #F5F5DC;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+
