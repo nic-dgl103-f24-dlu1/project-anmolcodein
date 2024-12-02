@@ -693,3 +693,25 @@ header nav ul li a {
   }
   
 }
+/*----------------------CONTACT------------------------------*/
+/*-----------Visitor section----------------------*/
+.visit h1, .visit h2, .contact h1, .contact h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+.visit table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+.visit table th, .visit table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.visit table th {
+  background-color: #333;
+  color: white;
+}
